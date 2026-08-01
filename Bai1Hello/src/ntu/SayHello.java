@@ -13,7 +13,8 @@ public class SayHello {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Lần đâu tôi học Java, và đang thử nghiệm lưu mã nguồn với Git");
+		System.out.println("Lần đâu tôi học java, và đang thử nghiệm lưu mã nguồn với GitHub");
+		System.out.println("Tôi thêm 1 dòng và sửa chữ java ở trên");
 	}
 
 }
