@@ -18,7 +18,7 @@ public class HelloWWorld {
 				=======================
 				HELLO, MODERN JAVA!
 				=======================
-				by Mai Cường Thọ NTU
+				by Trần Mộng Danh NTU
 				""";
 		System.out.println(greeting);
 	}
