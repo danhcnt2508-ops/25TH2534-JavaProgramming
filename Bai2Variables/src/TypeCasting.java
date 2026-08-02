@@ -29,7 +29,13 @@ public class TypeCasting {
 		String str2 = Integer.toString(num);
 		
 		//char -> int
+		char ch = 'A';
+		int ascii = (int) ch;  //65
 		
+		
+		//boolean -> String
+		boolean flag = true;
+		String boolStr = Boolean.toString(flag);
 		
 	}
 
