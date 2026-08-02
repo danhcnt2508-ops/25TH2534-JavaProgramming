@@ -34,10 +34,12 @@ public class ReferenceTypes {
 		Date ngayHienTai = new Date();
 		System.out.println(ngayHienTai);
 		
+		System.out.println("Mời nhập họ và tên: ");
+		//Nhập dữ liệu
 		Scanner scanner = new Scanner(System.in);
 		String name = scanner.nextLine(); //đọc chuỗi nhập vào
-		
-		System.out.println("Chào " + name);
+		//Xuất dữ liệu vừa nhập
+		System.out.println("Chào bạn " + name);
 		
 		scanner.close();//đóng scanner khi dùng xong
 
