@@ -31,10 +31,15 @@ public class ReferenceTypes {
 		
 		//Class - Lớp đối tượng
 				
-		Scanner scanner = new Scanner(System.in);
 		Date ngayHienTai = new Date();
 		System.out.println(ngayHienTai);
 		
+		Scanner scanner = new Scanner(System.in);
+		String name = scanner.nextLine(); //đọc chuỗi nhập vào
+		
+		System.out.println("Chào " + name);
+		
+		scanner.close();//đóng scanner khi dùng xong
 
 	}
 
