@@ -31,8 +31,42 @@ public class Operators {
 		x *= 2;			//x=x*2 => 24
 		x /= 4;			//x=x/4	=> 6
 		x %= 4;			//x=x%4 => 2
+		System.out.println(x);	//2
 		
-	
+		
+		//Toán tử so sánh
+		int a1 = 10, b1 = 20;
+		
+		System.out.println(a1 == b1); //false
+		System.out.println(a1 != b1); //true
+		System.out.println(a1 > b1);  //false
+		System.out.println(a1 < b1);	//true
+		System.out.println(a1 >= 10);	//true
+		System.out.println(b1 <= 20);	//true
+		
+		//Toán tử logic
+		boolean x1 = true, y1 = false;
+		
+		System.out.println(x1 && y1);	//false AND
+		System.out.println(x1 || y1);	//true OR
+		System.out.println(!x1);			//false NOT
+		
+		//Toán tử với điều kiện
+		int age = 18;
+		boolean hasLicense = true;
+		boolean canDrive = (age >= 18) && hasLicense;	//true
+		System.out.println(canDrive);
+		
+		//Toán tử ba ngôi
+		int age1 = 20;
+		String status = (age1 > 18) ? "Adult" : "Minor"; // status = "Adult"
+		
+		int score = 85;
+		String grade = (score >= 90) ? "A" :
+					   (score >= 80) ? "B" :
+					   (score >= 70) ? "C" :
+					   (score >= 60) ? "D" : "F";
+		System.out.println("grade = " + grade);		//grade = "B"
 		
 	}
 
