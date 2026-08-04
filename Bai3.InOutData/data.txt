@@ -1,0 +1,2 @@
+Dòng 1: Học Java
+Dòng 2: Nhập xuất file
