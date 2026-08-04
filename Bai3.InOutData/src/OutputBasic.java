@@ -11,6 +11,7 @@ public class OutputBasic {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		//1.1 Các phương thức xuất dữ liệu
 		//In không xuống dòng
 		System.out.print("Xin chào ");
 		System.out.print("Java!");
@@ -24,6 +25,8 @@ public class OutputBasic {
 		//Xuống dòng rỗng
 		System.out.println();
 		System.out.println("Sau dòng trống");
+		
+		
 
 	}
 
