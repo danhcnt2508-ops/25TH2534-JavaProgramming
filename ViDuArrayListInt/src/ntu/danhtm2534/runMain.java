@@ -29,7 +29,7 @@ public class runMain {
 		for (int i = 0; i < dsSoNguyen.size(); i++) {
 			//lấy giá trị phần từ ở vị trí i, cất vào biến tạm
 			Integer tam = dsSoNguyen.get(i);
-			System.out.printLN(tam + " ");
+			System.out.println(tam + " ");
 		}
 		
 		//nhập bằng foreach
@@ -38,6 +38,27 @@ public class runMain {
 			System.out.print(x + " ");
 			
 		}
+		
+		//c. Đếm số phần tử chẳn
+		int soLuongPTchan = 0;
+		
+		for (Integer x : dsSoNguyen) {
+			if (x % 2 == 0) {
+				soLuongPTchan += 1;
+			}
+		}
+		
+		System.out.println("\nSố lượng phần tử chẵn trong danh sách là: " + soLuongPTchan);
+		
+		//d. Tính tổng các phần từ: Thuật toán cộng dồn
+		
+		int TongDS = 0;
+		
+		for (Integer x : dsSoNguyen) {
+			
+			TongDS += x;	
+		}
+		System.out.println("\nTổng các phần tử trong danh sách là: " + TongDS);
 		
 		}
 
