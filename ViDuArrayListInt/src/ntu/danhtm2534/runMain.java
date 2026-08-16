@@ -14,15 +14,31 @@ public class runMain {
 		for (int i = 1; i <= 10; i++) {
 		//nhập 1 phần từ
 			//in 1 hướng dẫn cho người dùng
-		System.out.print("Mời nhập phần từ thứ " + i + ":");
-			//cho người dùng nhập
+		//System.out.print("Mời nhập phần từ thứ " + i + ":");
+			System.out.print("a[" + i + "]= ");
+			
+			//cho người dùng nhập, cất vào biến tạm
 		Integer tam = banPhim.nextInt();
 			//thêm vào cuối danh sách
 		dsSoNguyen.add(tam);
 		}
 		
-		//in thử danh sách
-		System.out.print(dsSoNguyen);
+		//b.in danh sách vừa nhập
+		//nhập bằng for
+		System.out.print("DANH SÁCH VỪA NHẬP LÀ: \n");
+		for (int i = 0; i < dsSoNguyen.size(); i++) {
+			//lấy giá trị phần từ ở vị trí i, cất vào biến tạm
+			Integer tam = dsSoNguyen.get(i);
+			System.out.printLN(tam + " ");
+		}
+		
+		//nhập bằng foreach
+		System.out.print("IN DANH SÁCH VỪA NHẬP BẰNG FOREACH: \n");
+		for (Integer x : dsSoNguyen) {
+			System.out.print(x + " ");
+			
+		}
+		
 		}
 
 }
