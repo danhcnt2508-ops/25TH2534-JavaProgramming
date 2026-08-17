@@ -63,5 +63,17 @@ public class TaiKhoanNganHang {
 		return false;
 	}
 	
+	//Phương thức chuyển khoản
+	public boolean chuyenTien(TaiKhoanNganHang tkNhan, double soTien) {
+		if (soTien > 0 && soTien <= this.soDu) {
+			this.soDu -= soTien;
+			tkNhan.guiTien(soTien);
+			System.out.println("Chuyển khoản thành công " + soTien + " đ sang TK " + tkNhan.soTaiKhoan);
+			return true;
+		}
+		System.out.println("Chuyển khoản thất bại. Số dư không đủ hoặc số tiền không hợp lệ.");
+		return false;
+	}
+	
 	
 }
