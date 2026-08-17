@@ -71,7 +71,7 @@ public class TaiKhoanNganHang {
 			System.out.println("Chuyển khoản thành công " + soTien + " đ sang TK " + tkNhan.soTaiKhoan);
 			return true;
 		}
-		System.out.println("Chuyển khoản thất bại. Số dư không đủ hoặc số tiền không hợp lệ.");
+		System.out.println("Chuyển khoản thất bại. Số dư không đủ hoặc số tiền không hợp lệ!");
 		return false;
 	}
 }
