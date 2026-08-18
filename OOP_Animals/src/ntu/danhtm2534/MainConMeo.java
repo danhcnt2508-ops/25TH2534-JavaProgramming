@@ -1,6 +1,6 @@
 package ntu.danhtm2534;
 
-public class MainPets {
+public class MainConMeo {
 
 	public static void main(String[] args) {
 		ConMeo meoDen = new ConMeo();
