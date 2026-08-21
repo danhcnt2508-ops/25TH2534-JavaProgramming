@@ -47,22 +47,96 @@ public class MainTaiKhoan {
 					break;
 					
 				case 2: 
+					System.out.print("Nhập số tài khoản: ");
+					String stk2 = scanner.nextLine();
+					System.out.print("Nhập tên chủ tài khoản: ");
+					String ten2 = scanner.nextLine();
+					System.out.print("Nhập số dư: ");
+					double sd2 = Double.parseDouble(scanner.nextLine());
+					System.out.print("Nhập hạn mức rút: ");
+					double hanMuc = Double.parseDouble(scanner.nextLine());
+					System.out.print("Nhập phí giao dịch: ");
+					double phi = Double.parseDouble(scanner.nextLine());
+					
+					TaiKhoan tkThanhToan = new TaiKhoanThanhToan(stk2, ten2, sd2, hanMuc, phi);
+					dsTaiKhoan.add(tkThanhToan);
 					break;
+					
+					
 				case 3: 
+					System.out.println("\n--- DANH SÁCH TÀI KHOẢN ---");
+					for (TaiKhoan tk : dsTaiKhoan) {
+						
+						tk.hienThiThongTin();
+						System.out.println("----------------------");
+					}
 					break;
-				case 4: 
+					
+					
+				case 4:
+					System.out.print("Nhập số tài khoản cần tìm: ");
+					String timStk = scanner.nextLine();
+					boolean found = false;
+					for (TaiKhoan tk : dsTaiKhoan) {
+                        if (tk.getSoTaiKhoan().equalsIgnoreCase(timStk)) {
+                            tk.hienThiThongTin();
+                            found = true;
+                            break;
+                        }
+                    }
+					if(!found) {
+						System.out.println("Không tìm thấy số tài khoản này");
+					}
 					break;
+					
 				case 5: 
+					System.out.print("Nhập số tài khoản cần gọi phương thức riêng: ");
+					String stkRieng = scanner.nextLine();
+					boolean foundRieng = false;
+					for (TaiKhoan tk : dsTaiKhoan) {
+						if (tk.getSoTaiKhoan().equalsIgnoreCase(stkRieng)) {
+							foundRieng = true;
+							if(tk instanceof TaiKhoanTietKiem) {
+								TaiKhoanTietKiem tktk = (TaiKhoanTietKiem) tk;
+								double tienLai = tktk.tinhLaiSuat(tktk.getSoDu());
+								System.out.println("Tiền lãi dự tính: " + tienLai);
+							} else if (tk instanceof TaiKhoanThanhToan) {
+								TaiKhoanThanhToan tktt = (TaiKhoanThanhToan) tk;
+								System.out.print("Nhập loại hóa đơn (vd: điện, nước): ");
+								String loaiHD = scanner.nextLine();
+								System.out.print("Nhập số tiền hóa đơn: ");
+								double tienHD = Double.parseDouble(scanner.nextLine());
+								tktt.thanhToanHoaDon(loaiHD, tienHD);
+							}
+							break;
+						}
+					}
+					if (!foundRieng) {
+						System.out.println("Không tìm thấy tài khoản");
+					}
 					break;
-				case 6: 
+					
+				case 6:
+					System.out.print("Nhập số tài khoản muốn rút tiền: ");
+					String stkRut = scanner.nextLine();
+					System.out.print("Nhập số tiền muốn rút: ");
+					double tienRut = Double.parseDouble(scanner.nextLine());
+					for (TaiKhoan tk : dsTaiKhoan) {
+						if(tk.getSoTaiKhoan().equalsIgnoreCase(stkRut)) {
+							tk.rutTien(tienRut);
+							break;
+						}
+					}				
 					break;
+					
 				case 0: 
+					System.out.println("Đã thoát chương trình.");
 					break;
+					
 				default: 
 					System.out.println("Lựa chọn không hợp lệ!");
 			}
-			
-			
+		
 		} while (chon != 0);
 		scanner.close();
 		
