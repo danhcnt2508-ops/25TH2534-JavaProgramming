@@ -17,16 +17,17 @@ public class GiangVien extends NguoiDung {
 	}
 	
 	//Thêm phương thức
-	public void taoKhoaHoc() {
-		
+	public void taoKhoaHoc(String tenKhoaHoc) {
+		danhSachKhoaHocGiangDay.add(tenKhoaHoc);
+		System.out.println("Giảng viên " + hoTen + " đã tạo khóa học mới: " + tenKhoaHoc);
 	}
 	
-	public void chamBai() {
-		
+	public void chamBai(String tenHocVien) {
+		System.out.println("Giảng viên " + hoTen + " đã chấm bài cho học viên: " + tenHocVien);
 	}
 	
-	public void traoDoiVoiHocVien() {
-		
+	public void traoDoiVoiHocVien(String tenHocVien) {
+		System.out.println("Giảng viên " + hoTen + " đang trao đổi với học viên: " + tenHocVien);
 	}
 	
 }
