@@ -54,14 +54,14 @@ public class TaiKhoan {
 			return false;
 	}
 	
-	public boolean rutTien(double soTien) {
+	public void rutTien(double soTien) {
 		if (soTien > 0 && soTien <= this.soDu) {
 			this.soDu -= soTien;
 			System.out.println("Rút tiền thành công. Số dư hiện tại là: " + this.soDu);
-			return true;
+			
 		} else
 			System.out.println("Số tiền rút không hợp lệ.");
-			return false;	
+			
 	}
 	
 	public void hienThiThongTin() {
@@ -71,6 +71,5 @@ public class TaiKhoan {
 		System.out.println("Số dư hiện tại lại: " + this.soDu);
 		
 	}
-	
 	
 }
