@@ -23,9 +23,9 @@ public class NguoiDung {
 	}
 	
 	public void xemThongTin() {
-		System.out.println("ID người dùng: ");
-		System.out.println("Họ tên: ");
-		System.out.println("Email: ");
-		System.out.println("Ngày đăng ký: ");
+		System.out.println("ID người dùng: " + this.id);
+		System.out.println("Họ tên: " + this.hoTen);
+		System.out.println("Email: " + this.email);
+		System.out.println("Ngày đăng ký: " + this.ngayDangKy);
 	}
 }

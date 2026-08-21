@@ -12,7 +12,7 @@ public class HocVien extends NguoiDung {
 	public HocVien(String id, String hoTen, String email, String ngayDangKy) {
 		super(id, hoTen, email, ngayDangKy);
 		this.danhSachKhoaHoc = new ArrayList<>();
-		this.diemSoTrungBinh = diemSoTrungBinh;
+		this.diemSoTrungBinh = 0.0;
 	}
 	
 	//thêm phương thức
