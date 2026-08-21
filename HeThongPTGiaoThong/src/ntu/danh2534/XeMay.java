@@ -27,7 +27,7 @@ public class XeMay extends PhuongTien{
 	public void hienThiThongTin() {
 			super.hienThiThongTin();
 			System.out.println("Dung tích xi lanh: " + dungTichXiLanh);
-			System.out.println("Loại xe: " + dungTichXiLanh);
+			System.out.println("Loại xe: " + loaiXe);
 			System.out.println("Vận tốc tối đa: " + layVanTocToiDa());
 			System.out.println("Số chỗ ngồi: " + laySoChoNgoi());
 		}
