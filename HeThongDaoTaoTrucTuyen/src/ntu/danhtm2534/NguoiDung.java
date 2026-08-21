@@ -20,7 +20,6 @@ public class NguoiDung {
 	//phương thức
 	public void dangNhap() {
 		System.out.println(hoTen + " đã đăng nhập hệ thống.");
-		return;
 	}
 	
 	public void xemThongTin() {
