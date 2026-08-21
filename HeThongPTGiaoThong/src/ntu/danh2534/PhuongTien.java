@@ -27,6 +27,6 @@ public class PhuongTien {
 	public void hienThiThongTin() {
 		System.out.println("Hãng sản xuất: " + hangSanXuat);
 		System.out.println("Năm sản xuất: " + namSanXuat);
-		System.out.println("Giá bán: " + giaBan);
+		System.out.println("Giá bán:" + giaBan);
 	}
 }
