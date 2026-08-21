@@ -14,4 +14,16 @@ BÀI 2 - BÀI TẬP VỀ NHÀ
 
 BÀI 3 - IN/OUT DATA
 
+BÀI 4 - ĐIỀU KIỆN RẼ NHÁNH
+
+BÀI 5 - VÒNG LẶP TRONG JAVA
+
+BÀI 6 - LỚP VÀ ĐỐI TƯỢNG (OOP)
+
+BÀI 7 - CONSTRUCTOR VÀ TÍNH ĐÓNG GÓI
+
+BÀI 8 - OOP - TÍNH KẾ THỪA
+
+
+
 
