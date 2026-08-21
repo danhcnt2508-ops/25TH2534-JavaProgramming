@@ -15,22 +15,20 @@ public class HinhChuNhat extends HinhHoc {
 	//ghi đè phương thức của HinhHoc
 	@Override
 	public double tinhDienTich() {
-		dienTich = (double) chieuDai * chieuRong;
-		return dienTich;
+		return (double) chieuDai * chieuRong;
 	}
 	
 	@Override
 	public double tinhChuVi() {
-		chuVi = (double) (chieuDai + chieuRong) * 2;
-		return chuVi;
+		return (double) (chieuDai + chieuRong) * 2;
 	}
 	
 	@Override
 	public void hienThiThongTin() {
 		super.hienThiThongTin();
 		System.out.println("HCN có chiều dài là: " + chieuDai);
-		
-		
-		
+		System.out.println("HCN có chiều rộng là: " + chieuRong);
+		System.out.println("HCN có diện tích là: " + tinhDienTich());
+		System.out.println("HCN có chu vi là: " + tinhChuVi());
 	}
 }

@@ -16,22 +16,20 @@ public class HinhTron extends HinhHoc {
 	@Override
 	public double tinhDienTich() {
 		//double PI = 3.1415;
-		dienTich = PI * banKinh * banKinh;
-		return dienTich;
+		return Math.PI * banKinh * banKinh;
 	}
 	
 	@Override
 	public double tinhChuVi() {
-		chuVi = 2 * PI * banKinh;
-		return chuVi;
+		return 2 * Math.PI * banKinh;
 	}
 	
 	@Override
 	public void hienThiThongTin() {
 		super.hienThiThongTin();
 		System.out.println("Hình tròn có bán kính là: " + banKinh);
-		System.out.println("Hình tròn có diện tích là: " + dienTich);
-		System.out.println("Hình tròn có chu vi là: " + chuVi);
+		System.out.println("Hình tròn có diện tích là: " + tinhDienTich());
+		System.out.println("Hình tròn có chu vi là: " + tinhChuVi());
 	}
 	
 }
