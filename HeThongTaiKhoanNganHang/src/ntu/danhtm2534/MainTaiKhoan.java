@@ -8,7 +8,7 @@ public class MainTaiKhoan {
 
 	public static void main(String[] args) {
 		//1. Tạo danh sách tài khoản, biến nhập liệu,lựa chọn
-		ArrayList<TaiKhoan> dstaiKhoan = new ArrayList<>();
+		ArrayList<TaiKhoan> dsTaiKhoan = new ArrayList<>();
 		Scanner scanner = new Scanner(System.in);
 		int chon;
 		
@@ -27,8 +27,25 @@ public class MainTaiKhoan {
 			
 			//thực thi theo từng lựa chọn từ 0 đến 6
 			switch (chon) {
-				case 1: 
+				case 1:
+					System.out.print("Nhập số tài khoản: ");
+					String stk1 = scanner.nextLine();
+					System.out.print("Nhập tên chủ tài khoản: ");
+					String ten1 = scanner.nextLine();
+					System.out.print("Nhập số dư: ");
+					double sd1 = Double.parseDouble(scanner.nextLine());
+					System.out.print("Nhập kỳ hạn (tháng): ");
+					int kyHan = Integer.parseInt(scanner.nextLine());
+					System.out.print("Nhập lãi suất (vd:0.06): ");
+					double laiSuat = Double.parseDouble(scanner.nextLine());
+					System.out.print("Nhập số tháng gửi tính đến hiện tại: ");
+					int soThang = Integer.parseInt(scanner.nextLine());
+					
+					TaiKhoan tkTietKiem = new TaiKhoanTietKiem(stk1, ten1, sd1, kyHan, laiSuat, soThang);
+					dsTaiKhoan.add(tkTietKiem);
+					System.out.println("Thêm tài khoản tiết kiệm thành công.");
 					break;
+					
 				case 2: 
 					break;
 				case 3: 
