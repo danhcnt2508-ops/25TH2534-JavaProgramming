@@ -39,4 +39,9 @@ public class NhanVat {
 		System.out.println("Máu: " + mau);
 		System.out.println("Sức mạnh: " + sucManh);
 	}
+
+	public void tanCong() {
+		// TODO Auto-generated method stub
+		
+	}
 }

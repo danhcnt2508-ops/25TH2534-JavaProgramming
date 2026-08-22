@@ -33,8 +33,6 @@ public class ChienBinh extends NhanVat {
 		super.hienThiThongTin();
 		System.out.println("Giáp: " + this.giap);
 		System.out.println("Vũ khí: " + this.vuKhi);
-		
-		
 	}
 	
 }
