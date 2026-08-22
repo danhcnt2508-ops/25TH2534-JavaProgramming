@@ -11,7 +11,7 @@ public class ThaiCucQuyen extends VoHoc {
 	private boolean coTapThaiCucKiem;
 	
 	
-	public ThaiCucQuyen(String tenMonVo, String nguonGoc, String trietLy) {
+	public ThaiCucQuyen(String tuyetChieu, boolean coTapThaiCucKiem) {
 		super("Thái Cực Quyền", "Trung Quốc", "Lấy nhu khắc cương, mượn lực đánh lực");
 		this.dsChieuThuc = new ArrayList<>();
 		this.tuyetChieu = tuyetChieu;

@@ -6,7 +6,7 @@ public class VinhXuanQuyen extends VoHoc {
 	private boolean dungMocNhan;
 	private String baiQuyenNenTang;
 	
-	public VinhXuanQuyen(String tenMonVo, String nguonGoc, String trietLy, boolean dungMocNhan, String baiQuyenNenTang) {
+	public VinhXuanQuyen(boolean dungMocNhan, String baiQuyenNenTang) {
 		super("Vịnh Xuân Quyền", "Trung Quốc", "Trung tuyến luận, cận chiến nhanh");
 		this.dungMocNhan = dungMocNhan;
 		this.baiQuyenNenTang = baiQuyenNenTang;

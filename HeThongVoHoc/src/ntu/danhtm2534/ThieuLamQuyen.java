@@ -6,7 +6,7 @@ public class ThieuLamQuyen extends VoHoc {
 	private String loaiBinhKhi;
 	private int soCapDoNoiCong;
 	
-	public ThieuLamQuyen(String tenMonVo, String nguonGoc, String trietLy, String loaiBinhKhi, int soCapDoNoiCong) {
+	public ThieuLamQuyen(String loaiBinhKhi, int soCapDoNoiCong) {
 		super("Thiếu Lâm Quyền", "Trung Quốc", "Cương mãnh, toàn diện, mô phỏng loài vật");
 		this.loaiBinhKhi = loaiBinhKhi;
 		this.soCapDoNoiCong = soCapDoNoiCong;
