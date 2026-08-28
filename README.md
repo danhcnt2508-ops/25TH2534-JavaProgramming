@@ -42,6 +42,8 @@ Thư mục chứa các mã nguồn làm quen bước đầu với ngôn ngữ l�
 
 
 
+\---
+
 \### 2. `Bai2\_BaiTapThucHanh` (Sử dụng JavaSE-17)
 
 Tập hợp chuỗi bài tập thực hành trên lớp nhằm củng cố tư duy thuật toán và lập trình hướng đối tượng cơ bản.
@@ -58,6 +60,8 @@ Tập hợp chuỗi bài tập thực hành trên lớp nhằm củng cố tư d
 
 
 
+\---
+
 \### 3. `Bai2\_BaiTapVeNha` (Sử dụng JavaSE-17)
 
 Các bài tập ứng dụng tự làm ở nhà giải quyết các bài toán toán học, tài chính và quản lý thực tế.
@@ -73,8 +77,6 @@ Các bài tập ứng dụng tự làm ở nhà giải quyết các bài toán t
 
 
 \---
-
-
 
 \### 4. `Bai2Variables` (Sử dụng jre)
 
@@ -93,6 +95,8 @@ Học và làm quen với các khái niệm cốt lõi về biến, kiểu dữ 
 &#x20; \* `TypeCasting.java`: Thực hành ép kiểu dữ liệu (ép kiểu rộng và ép kiểu hẹp).
 
 
+
+\---
 
 \### 5. `Bai3.InOutData` (Sử dụng JavaSE-20)
 
@@ -116,6 +120,8 @@ Xử lý các thao tác nhập dữ liệu từ bàn phím và xuất dữ liệ
 
 
 
+\---
+
 \### 6. `Bai3\_BaiTapThucHanh` (Sử dụng JavaSE-17)
 
 Ứng dụng các kiến thức nhập xuất và biến đã học để xây dựng các chương trình mini giải quyết bài toán thực tế.
@@ -137,6 +143,8 @@ Xử lý các thao tác nhập dữ liệu từ bàn phím và xuất dữ liệ
 &#x20; \* \*\*File dữ liệu đi kèm:\*\* `nhatky.txt`, `students.txt`
 
 
+
+\---
 
 \### 7. `Bai4.DK\_Renhanh\_Java` (Sử dụng JavaSE-17)
 
@@ -216,7 +224,7 @@ Mô hình hóa thông tin thực thể dữ liệu trong quản lý giáo dục.
 
 \* `Main.java`: Lớp thực thi chương trình, quản lý luồng nhập xuất và kiểm tra dữ liệu của đối tượng sinh viên.
 
-
+\---
 
 \#### 🔹 Project: `ViDuOOP\_XeHoi`
 
@@ -228,7 +236,51 @@ Mô phỏng đối tượng thực tế trong đời sống vào lập trình.
 
 \---
 
+\#### 🔹 Project: `OOP\_MayTinh`
 
+Mô hình hóa đối tượng máy tính cá nhân hoặc hệ thống máy tính toán.
+
+\* `MayTinh.java`: Định nghĩa lớp Máy Tính với các thuộc tính cấu hình (thương hiệu, CPU, RAM, giá bán...) hoặc các hàm xử lý tính toán số học.
+
+\* `MainMayTinh.java`: Khởi tạo các thực thể máy tính cụ thể, thực thi và kiểm tra các phương thức vận hành của lớp.
+
+\---
+
+\#### 🔹 Project: `OOP\_Menu\_Scanner\_BankAccount`
+
+Ứng dụng quản lý tài khoản ngân hàng kết hợp giao diện Console tương tác qua Menu lệnh.
+
+\* `TaiKhoanNganHang.java`: Định nghĩa lớp tài khoản với các thuộc tính số tài khoản, tên chủ thẻ, số dư và các phương thức gửi tiền, rút tiền.
+
+\* `MainBankAccount.java`: Chứa vòng lặp hiển thị menu chức năng (Xem số dư, Rút tiền, Gửi tiền, Thoát), sử dụng `Scanner` để nhận lệnh điều khiển từ người dùng.
+
+
+
+\---
+
+\#### 🔹 Project: `OOP\_Sach`
+
+Quản lý thông tin dữ liệu sách phục vụ cho bài toán quản lý thư viện hoặc nhà sách.
+
+\* `Sach.java`: Định nghĩa cấu trúc lớp Sách gồm các thuộc tính như tên sách, tác giả, năm xuất bản, nhà xuất bản, giá tiền.
+
+\* `MainSach.java`: Lớp điều khiển dùng để tạo lập danh sách các cuốn sách, thực hiện nhập thông tin và hiển thị dữ liệu sách ra console.
+
+
+
+\---
+
+\#### 🔹 Project: `OOP\_TKNganHang`
+
+Phiên bản củng cố và chuyên sâu hơn về các nghiệp vụ xử lý logic xung quanh đối tượng tài khoản ngân hàng.
+
+\* `TaiKhoanNganHang.java`: Định nghĩa lớp tài khoản, tập trung vào tính đóng gói (Encapsulation) với đầy đủ các hàm Getter/Setter và kiểm tra ràng buộc dữ liệu.
+
+\* `MainTKNganHang.java`: Thực hiện kiểm thử luồng nghiệp vụ ngân hàng, giả lập các giao dịch tài chính cơ bản.
+
+
+
+\---
 
 \## 🚀 Hướng dẫn cài đặt và Chạy ứng dụng
 
