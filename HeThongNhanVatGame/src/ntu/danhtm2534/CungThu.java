@@ -12,13 +12,30 @@ public class CungThu extends NhanVat {
 	
 	//thêm phương thức
 	public void banTen() {
-		return;
+		if(soTen > 0) {
+			soTen--;
+			double satThuongBanTen = this.sucManh * 1.8;
+			System.out.println(ten + " bắn một mũi tên từ xa mang theo " + satThuongBanTen 
+								+ " sát thương! (Số mũi tên còn lại: " + soTen + ")");
+        } else {
+        	System.out.println(ten + " đã hết tên! Không thể bắn từ xa.");
+        }
 	}
 	
 	//Ghi đè phương thức tanCong
 	@Override
-	public void tanCong(String ten, int sucManh) {
-		System.out.println(ten + " đã tấn công với sức mạnh " + sucManh);
-		System.out.println("Sát thương phụ thuộc vào: " + this.tamBan);
+	public void tanCong() {
+		double satThuongTheoTam = this.sucManh * (1 + (tamBan/100));
+		System.out.println(ten + " tấn công ở khoảng cách " + tamBan + "m, gây "
+							+ satThuongTheoTam + " sát thương.");
 	}
+	
+	//ghi đè hiển thị thông tin
+			@Override
+			public void hienThiThongTin() {
+				System.out.println("=== HIỂN THỊ THÔNG TIN CUNG THỦ ===");
+				super.hienThiThongTin();
+				System.out.println("Tầm bắn: " + this.tamBan);
+				System.out.println("Số tên: " + this.soTen);
+			}
 }

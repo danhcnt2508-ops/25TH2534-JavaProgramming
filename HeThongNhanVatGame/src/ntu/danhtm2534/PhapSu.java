@@ -14,21 +14,39 @@ public class PhapSu extends NhanVat {
 	
 	//Ghi đè phương thức tanCong
 	@Override
-	public void tanCong(String ten, int mana) {
-		int soLanTanCong;
-		for(soLanTanCong = 1; soLanTanCong <= 10; soLanTanCong++) {
-		System.out.println(ten + " đã tấn công với sức mạnh " + sucManh + " tiêu hao " + mana + " của đối thủ");
+	public void tanCong() {
+		if(this.mana >= 10) {
+			this.mana -= 10;
+			System.out.println(ten + " bắn tia sáng ma thuật, gây " + sucManh + " sát thương (Tiêu hao 10 Mana. Mana còn lại: " + this.mana + ").");
+		} else {
+			System.out.println(ten + " không đủ mana để tấn công! Cần hồi mana.");
 		}
 	}
 	
 	//Thêm phương thức
-	public int hoiMana() {
-		return ++mana;
-	}
 	
 	public void suDungPhepThuat() {
-		return;
+		if (this.mana >= 30) {
+            this.mana -= 30;
+            double satThuongPhep = this.sucManh * 2.5;
+            System.out.println(ten + " niệm chú thi triển phép [" + phepThuat + "], gây " + satThuongPhep +
+            		" sát thương phép hoành tráng! (Mana còn lại: " + this.mana + ")");
+        } else {
+            System.out.println(ten + " không đủ mana để thi triển phép thuật [" + phepThuat + "].");
+        }
 	}
 	
+	public void hoiMana(int luongHoi) {
+		this.mana += luongHoi;
+		System.out.println(ten + " đã hồi phục " + luongHoi + " Mana. Mana hiện tại: " + this.mana);
+	}
 	
+	//ghi đè hiển thị thông tin
+		@Override
+		public void hienThiThongTin() {
+			System.out.println("=== HIỂN THỊ THÔNG TIN PHÁP SƯ ===");
+			super.hienThiThongTin();
+			System.out.println("Phép thuật: " + this.phepThuat);
+			System.out.println("Mana: " + this.mana);
+		}
 }

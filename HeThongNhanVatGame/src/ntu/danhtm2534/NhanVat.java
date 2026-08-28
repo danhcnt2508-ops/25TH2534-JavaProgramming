@@ -18,22 +18,21 @@ public class NhanVat {
 	}
 	
 	//tạo phương thức
-	public void tanCong(String ten, int sucManh) {
-		System.out.println(ten + " đã tấn công với sức mạnh " + sucManh);
+	
+	public void nhanSatThuong(double satThuong) {
+		this.mau -= satThuong;
+		System.out.println(ten + " nhận " + satThuong + " sát thương. Máu còn lại: " + this.mau);;
+		if(this.mau <= 0) {
+			chet();
+		}
 	}
 	
-	public void nhanSatThuong(String ten) {
-		System.out.println(this.ten + " nhận sát thương");;
-		
-	}
-	
-	public void chet(String ten) {
+	public void chet() {
 	
 		System.out.println(ten + " đã chết.");
 	}
 	
 	public void hienThiThongTin() {
-		System.out.println("=== HIỂN THỊ TÊN NHÂN VẬT ===");
 		System.out.println("Tên: " + ten);
 		System.out.println("Cấp độ: " + capDo);
 		System.out.println("Máu: " + mau);
@@ -41,7 +40,7 @@ public class NhanVat {
 	}
 
 	public void tanCong() {
-		// TODO Auto-generated method stub
+		 System.out.println(ten + " tấn công bình thường, gây " + sucManh + " sát thương.");
 		
 	}
 }
