@@ -18,7 +18,7 @@ Mã nguồn được tổ chức cấu trúc thư mục rõ ràng theo từng m�
 
 ---
 
-## 📂 Lộ trình học tập & Cấu trúc mã nguồn
+## 📂 Lộ trình thực hành & Cấu trúc mã nguồn
 
 ### 🧭 Phần 1: Làm quen & Cú pháp cơ bản
 
